@@ -36,7 +36,7 @@ p {
 }
 
 .section-p1 {
-    margin: 40px 80px;
+    padding: 40px 80px;
 }
 
 .section-m1 {
@@ -76,7 +76,7 @@ body {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: #1a1a1a
+    color: hsl(36, 85%, 61%)
     transition: 0.3s ease;
 }
 
@@ -127,6 +127,87 @@ body {
   position: relative;
   background-color: lch(74.65% 26.17 144.4);
 }
+
+#page-header{
+    background-color: darkseagreen;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2 {
+    color: #fff;
+}
+
+#steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#steps .steps-box{
+    width: 300px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#steps .steps-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #cdebbc;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+   width: 23%;
+   min-width: 250px;
+   padding: 10px 12px;
+   border: 1px solid #cce7d0;
+   position: relative;
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro des i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
 
 
 
