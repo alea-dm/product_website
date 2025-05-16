@@ -1,0 +1,11 @@
+<ul id="cart-items"></ul>
+<script>
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  const cartItems = document.getElementById('cart-items');
+
+  cart.forEach(item => {
+    const li = document.createElement('li');
+    li.textContent = `${item.name} - €${item.price.toFixed(2)}`;
+    cartItems.appendChild(li);
+  });
+</script>
